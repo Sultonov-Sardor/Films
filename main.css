@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'Cambay';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cambay-v12-latin-regular.woff2') format('woff2'), 
+       url('../fonts/cambay-v12-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cambay';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/cambay-v12-latin-700.woff2') format('woff2'), 
+       url('../fonts/cambay-v12-latin-700.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cabin-v26-latin-regular.woff2') format('woff2'), 
+       url('../fonts/cabin-v26-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/cabin-v26-latin-700.woff2') format('woff2'), 
+       url('../fonts/cabin-v26-latin-700.woff') format('woff'); 
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin';
+}
+
+.container{
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.dark{
+  background-color: #050505;
+}
+
+.films-title{
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  color: blue;
+  background-color: transparent;
+  padding: 25px 0;
+}
+
+.wrap{
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  border-top: 1px solid blue;
+}
+
+.left{
+  width: 400px;
+  height: 300px;
+  height: auto;
+  border-right: 1px solid blue;
+}
+
+.left__box{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.left__box:last-child{
+  padding: 0;
+}
+
+.left__input{
+  padding: 10px 20px;
+  border: 1px solid blue;
+  border-radius: 20px;
+}
+
+.left__btn{
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 1px solid blue;
+  border-radius: 20px;
+  background-color: blue;
+  color: #fff;
+}
+
+.left__select{
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid blue;
+  width: 150px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.left__select:last-child{
+  margin-right: 0;
+}
+
+.left__btn-mode{
+  padding: 20px;
+  background-color: #FFF;
+  border-radius: 50%;
+  font-size: 15px;
+  border: 1px solid blue;
+  margin-left: 45px;
+}
+
+.bookmark{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.right{
+  width: 70%;
+  padding: 20px;
+}
+
+.right__list{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.film-item{
+  list-style-type: none;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 800px;
+  border: 1px solid blue;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  transition: 1s ease-in-out;
+}
+
+.film-item:hover{
+  background-color: blue;
+  color: #fff;
+}
+
+.film-title{
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.film-genres{
+  margin: 0;
+  margin-top: 10px;
+}
+
+.film-overview{
+  margin: 0;
+  margin-top: 10px;
+  white-space: wrap;
+  width: 380px;
+  height: 95px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+}
+
+.film-bookmark{
+  border: none;
+  background-color: transparent;
+}
+
+.bookmark-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  border: 1px solid blue;
+}
+
+.bookmark-title{
+  margin: 0;
+}
